@@ -5,47 +5,189 @@ finished codepen url: https://codepen.io/marat-kotik/pen/poepYRZ?editors=1100
 
     It's html that gives meaning to our markup.
 
-    2. What is HTML used for? 
+    2. What is HTML used for?
+
+    HTML is used to create elements on a webpage.
+
     3. What is an attribute and where do we put it? 
+
+    Attributes are special words inside the html tag that control the element's behavior.
+
     4. What is the h1 tag used for? How many times should I use it on a page?
+
+    The h1 tag is used for the main header on a webpage. Generally, it should only be used once on a page.
+
     5. Name two tags that have required attributes
+
+    anchor tags require an 'href' attribute and script tags require an 'src' attribute.
+
     6. What do we put in the head of our HTML document? 
+
+    All the information we want to tell the browser, but we don't want the user to see.
+
     7. What is an id? 
+
+    An id is an attribute that identifies a certain element. It can only be used once.
+
     8. What elements can I add an id to? 
+
+    Any element can get an id tag, but the id tag can only be used once.
+
     9. How many times can I use the same id on a page? 
+
+    Only once.
+
     10. What is a class? 
+
+    A class is similar to an id, but it can be used unlimited times. It is generally used to style elements.
+
     11. What elements can I add a class to? 
+
+    You can add a class to any element.
+
     12. How many times can I use the same class on a page? 
+
+    As many as you want
+
     13. How do I get my link to open in a new tab?
+
+    You would add an attribute to its anchor tag like this: "target=_blank" .
+
+
     14. What is the alt attribute in the image tag used for? 
+
+    An alt attribute is used on images to describe the image in words. It will be used for audible translations of the webpage.
+
     15. How do I reference an id?
+
+    Write '#' followed by the id name.
+
     16. What is the difference between a section and a div
+
+    A section is typically used to keep things together semantically, and divs are used for stylistic purposes.
+
     17. What is CSS used for? 
+
+    CSS is used to style HTML elements.
+
     18. How to we select an element? Example - every h2 on the page
+
+    To select an element you need to use the appropriate selector. To select every h2 on the page the selector would be 'h2'
+
     19. What is the difference between a class and an id? - Give me an example of when I might use each one
+
+    A class can be used as many times as you want, but an id can only be used once.
+
     20. How do we select classes in CSS?
+
+    To select a class in css type '.' followed by the class name.
+
     21. How do we select a p element with a single class of “human””?
+
+    You would write 'p.human'.
+
     22. What is a parent child selector? When would this be useful? 
+
+    A parent child selector is used to select an element that is within another element. This would be useful to select elements that are within other elements.
+
     23. How do you select all links within a div with the class of sidebar?
+
+    you would write 'div.sidebar {
+
+    }'
+
     24. What is a pseudo selector?
+
+    A pseudo selector is a selector used to reference an object under certain conditions based on the users behavior.
+
     25. What do we use the change the spacing between lines?
+
+    You would use the style named 'line-height
+
     26. What do we use to change the spacing between letters?
+
+    You would use the property 'letter-spacing'
+
     27. What do we use to to change everything to CAPITALS? lowercase? Capitalize?
+
+    You would use the property 'text-transform'
+
     28. How do I add a 1px border around my div that is dotted and black?
+
+    You would write: 
+    
+    div {
+        border: 1px dotted black;
+    }
+
     29. How do I select everything on the page? 
+
+    You would use the selector '*'.
+
     30. How do I write a comment in CSS?
+
+    To open a comment type '/*' to close a comment, type '*/'.
+
     31. How do I find out what file I am in, when I am using the command line? 
+
+    The name of the folder you are in should be shown right before the percent sign. To eb shown which directory you are in, type '-la'.
+
     32. Using the command line - how do I see a list of files/folders in my current folder?
+
+    Use the command 'ls'.
+
     33. How do I remove a file via the command line? Why do I have to be careful with this? 
+
+    you would type 'rm' followed by the name of the file to be deleted. You have to be careful with this because you can delete important files without any warning from the system.
+
     34. Why should I use version control? 
+
+    Version control should be used so you don't mess up the main code branch. Also, version control is used by the entire software engineering industry.
+
     35. How often should I commit to github?
+
+    You should commit to github every 20 minutes or so. Whenever you make a major change to your code.
+
     36. What is the command we would use to push our repo up to github? 
+
+    Type 'git push -u origin '. If no branch has been push to github yet, you would type that followed by the name of the branch
+
     37. Walk me through Lambda's git flow. 
+
+        1. Fork the file, make sure your username is shown in the repository name. 
+        2. Press clone and copy the https link. 
+        3. In the command prompt, use cd to get to the directory where you want the cloned repo to be. 
+        4. Use git clone <link-to-repo> to clone the repository to the directory.
+        5. cd into the newly created repository.
+        6. Use git checkout -b 'firstname-lastname' to create your own branch of this repository.
+        7. Type code . to open the branch in VSCode.
+        8. Make your changes.
+        9. Type git add . to add your changes to the branch.
+        10. git commit -m "message" to commit your changes.
+        11. git push -u origin branch-name to push the branch to github. branch-name should be whatever was specified. If this branch has already been pushed to github once, then you only need to type git push -u origin 
+        12. Submit a 'pull request' on github
+        13. Press the branch master menu, click your name-branch and then click the New pull request button to make a pull request on your name branch.
+        14. Change the base repository to your own, and click create pull request.
+        15. Copy the URL and paste it into Canvas.
 
 Stretch Questions
 
     1. What is the difference between an inline element and a block element?
+
+    A block element will always create a new line after the closing tag, whereas inline will not.
+
     2. What happens when an element is positioned absolutely? 
+
+    When an element is positioned absolutely it will not interfere with the flow of its surrounding elements. Also, it will be bound by the closest parent that is styled as 'position: relative'. If none exist, it will be bound by the body.
+
     3. How do I make an element take up only the amount of space it needs but also have the ability to give it a width? 
+
+    You would use the property 'display: inline-block'.
+
     4. Name 3 elements that are diplay block by default, 2 elements that are display inline by default and 1 element that is display inline-block by default
+
+    3 elements that are block display by default are div, h1, and p. 2 elements that are inline display by default are spans and anchors. 1 element that is inline-block is images.
+
     5. In your own words, explain the box model. What is the "fix" for the box model, in other words, how do we make all elements respect the width we've given them? 
+
+    The box model is used determine the spacing around an element. There are four layers. From outside-in the layers are margin, border, padding, content. In order to make all elements respect the width you are giving them, you can change the size of certain parts of the elements 'box model'.
